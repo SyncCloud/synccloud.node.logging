@@ -2,7 +2,7 @@
   "name": "@synccloud/logging",
   "version": "0.0.1",
   "description": "",
-  "main": "dist/index",
+  "main": "src/index",
   "scripts": {
     "test": "node_modules/.bin/mocha $(find test/*.spec.es6)"
   },
