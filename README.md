@@ -30,3 +30,16 @@ Log.info(() => ({
     }
 }), (x) => `${x.message.msg} ${Log.format(x.foo)}`)
 ```
+
+## Trace decorator
+```js
+import {trace} from '@synccloud/logging';
+
+trace.setup(logger);
+
+class Foo {
+    @trace
+    bar() {
+    }
+}
+```
