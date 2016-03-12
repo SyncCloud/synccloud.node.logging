@@ -33,9 +33,13 @@ Log.info(() => ({
 
 ## Trace decorator
 ```js
-import {trace} from '@synccloud/logging';
+import {trace, Logger, JsonFormatter, StreamTarget} from '@synccloud/logging';
+import fs from 'fs';
 
-trace.setup(logger);
+const traceLogger = new Logger();
+traceLogger.targets.add(new StreamTarget(fs.createWriteStream('./trace.log')));
+traceLogger.formatters.append(new JsonFormatter());
+trace.setup(traceLogger);
 
 class Foo {
     @trace
