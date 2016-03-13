@@ -2,8 +2,8 @@ import moment from 'moment';
 import stringify from 'json-stringify-safe';
 import {decorate, enumerable, lazyInitialize, nonenumerable} from 'core-decorators';
 import _, {memoize} from 'lodash';
+import {DATETIME_FORMAT} from './constants';
 
-const DATETIME_FORMAT = 'DD-MM HH:mm:ss.SSSSSSSSS';
 const empty = () => '';
 
 export default class LogEvent {

@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-const DATETIME_FORMAT = 'DD-MM HH:mm:ss.SSSSSSSSS';
+import {DATETIME_FORMAT} from '../constants';
 
 export default class MomentFormatter {
   canFormat(obj) {

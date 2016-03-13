@@ -1,8 +1,7 @@
 import {padRight} from 'lodash';
 import {indent} from '../util';
 import colors from 'colors';
-
-const DATETIME_FORMAT = 'DD-MM HH:mm:ss.SSSSSSSSS';
+import {DATETIME_FORMAT} from '../constants';
 
 export default class ConsoleTarget {
   //noinspection JSMethodCanBeStatic

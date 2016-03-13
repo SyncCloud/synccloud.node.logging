@@ -1,6 +1,8 @@
 import {padRight} from 'lodash';
 import {indent} from '../util';
 
+import {DATETIME_FORMAT} from '../constants';
+
 export default class StreamTarget {
   get stream() {
     return this._stream;
