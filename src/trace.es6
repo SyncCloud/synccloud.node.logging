@@ -133,5 +133,5 @@ trace.formatReturnValue = (returnValue) => {
 };
 
 trace.formatException = (exception) => {
-    return `\n    ${indent(trace.logger.formatException(exception), '    ')}`;
+    return `\n    ${indent(trace.logger.format(exception), '    ')}`;
 };
