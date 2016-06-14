@@ -1,7 +1,7 @@
 import stringify from 'json-stringify-safe';
 
 export default class JSONFormatter {
-  constructor(options) {
+  constructor(options={}) {
     this.options = options
   }
 
